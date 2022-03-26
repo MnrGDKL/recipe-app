@@ -41,9 +41,12 @@ const Home = () => {
         meal={meal}
       />
       {recipes ? (
+        // api den gelen datanın tümü, (bir yiyecek ismi girildiğinde)
         <MainContainer>
-          {recipes.map((recipe, index) => (
-            <RecipeCardComp key={index} recipe={recipe.recipe} />
+          {/* arama sonucu yiyecek kartlarının kutusu */}
+          {recipes.map((liste, index) => (
+            <RecipeCardComp key={index} recipe={liste.recipe} />
+            // sadece liste yollarsak apı deki gibi  gidiyor. liste.recipe= json formatında key value
           ))}
         </MainContainer>
       ) : (

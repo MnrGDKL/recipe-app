@@ -2,11 +2,13 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Nav = styled.div`
+  /* açık yeşil olan navbar */
   padding: 0 2rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; //yatayda aralıklı objeler halinde ortala
+  align-items: center; // dikeyde ortala
   flex-wrap: wrap;
+  /* Varsayılan olarak esnek öğeler tek bir satıra sığmaya çalışırlar. Gerektiğinde birden fazla satıra yaymak için bu özelliği kullanabilirsiniz */
   background: #e1f1dd;
   border-radius: 0 0 10px 10px;
   height: 75px;
@@ -15,6 +17,7 @@ export const Nav = styled.div`
 export const Hamburger = styled.div`
   display: none;
   flex-direction: column;
+  /*çizgiler üstüste hamburger gibi */
   cursor: pointer;
   span {
     height: 4px;
@@ -28,6 +31,7 @@ export const Hamburger = styled.div`
   }
 `;
 export const MenuLink = styled(Link)`
+  /* navbardaki 3 kelime ... tek tek about vs yazanların özellikleri */
   padding: 1rem 2rem;
   cursor: pointer;
   text-align: center;
@@ -41,6 +45,7 @@ export const MenuLink = styled(Link)`
     font-weight: bold;
   }
   @media (max-width: 768px) {
+    /* hamburger meydana çıktığında (tıklanınca açılan merdiven, Menu deki ölçüyle aynı olmalı) */
     background-color: #e1f1dd;
     border: 1px solid #00adb5;
     border-radius: 10px;
@@ -48,15 +53,20 @@ export const MenuLink = styled(Link)`
   }
 `;
 export const Menu = styled.div`
+  /* navbardaki 3 kelime about ...hepsini içine alan sarmalın (kutunun ) özellikleri*/
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  /* 3 kelime  açılınca üstteki özelliklerde olsun*/
   @media (max-width: 768px) {
     overflow: hidden;
+    /* uzun yazı olurda taşarsa gizle */
     flex-direction: column;
     width: 100%;
-    max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
+    /* props olarak, osman=true geldi mesela */
+    max-height: ${({ osman }) => (osman ? "300px" : "0")};
+    /* 3 çizgiye ilk tıklandığında 300 px açılsın, sonraki tıklamada kapansın */
     transition: max-height 0.3s ease-in;
   }
 `;

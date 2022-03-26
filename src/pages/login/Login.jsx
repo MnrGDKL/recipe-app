@@ -14,6 +14,7 @@ const Login = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     window.location.href = "/";
+    // geçerli sayfanın href'ini (URL) döndürür. anasayfaya git
   };
 
   return (

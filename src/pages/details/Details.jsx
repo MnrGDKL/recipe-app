@@ -12,8 +12,9 @@ import dietSvg from "../../assets/diet.svg";
 
 const Details = (props) => {
   const location = useLocation();
-  // console.log(location.state.recipe);
+
   const recipe = location.state.recipe;
+  // navigate("/details", { state: { recipe } }); recipecard da bütün data json formatında state e gömülmüştü
   return (
     <DetailContainer>
       <HeaderContainer>

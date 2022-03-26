@@ -9,7 +9,7 @@ export const AboutContainer = styled.div`
   min-height: calc(100vh - 80px);
   line-height: 2;
   span {
-    color: white;
+    color: orange;
     font-family: "Girassol", sans-serif;
     font-size: 3rem;
   }
@@ -23,7 +23,7 @@ export const InfoContainer = styled.div`
   padding: 25px;
   border-radius: 5px;
   a {
-    color: white;
+    color: orange;
   }
 `;
 
