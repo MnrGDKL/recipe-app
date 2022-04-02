@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-
+import { ExternalLink } from "react-external-link";
 export const Nav = styled.div`
   /* açık yeşil olan navbar */
   padding: 0 2rem;
@@ -16,6 +16,7 @@ export const Nav = styled.div`
 `;
 export const Hamburger = styled.div`
   display: none;
+  /* Bir öğeyi gizleme özelliği  Öğe gizlenecek ve sayfa, öğe orada değilmiş gibi alttaki stiller yok gibi görüntülenecektir: */
   flex-direction: column;
   /*çizgiler üstüste hamburger gibi */
   cursor: pointer;
@@ -26,8 +27,49 @@ export const Hamburger = styled.div`
     margin-bottom: 4px;
     border-radius: 5px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 768px) /* ekran 768 den küçülünce hamburger şekli gözüksün */ {
     display: flex;
+    /* kapsayıcı içerisindeki öğelere artık esneklik vermek için, artık gözükmesi için*/
+  }
+`;
+export const A = styled.a`
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #02475e;
+  transition: all 0.3s ease-in;
+  font-size: 2rem;
+  font-family: "Girassol", sans-serif;
+  &:hover {
+    color: #00adb5;
+    font-weight: bold;
+  }
+  @media (max-width: 768px) {
+    /* hamburger meydana çıktığında (tıklanınca açılan merdiven, Menu deki ölçüyle aynı olmalı) */
+    background-color: #e1f1dd;
+    border: 1px solid #00adb5;
+    border-radius: 10px;
+    width: 100%;
+  }
+`;
+export const ExtrnlLink = styled(ExternalLink)`
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #02475e;
+  transition: all 0.3s ease-in;
+  font-size: 2rem;
+  font-family: "Girassol", sans-serif;
+  &:hover {
+    color: #00adb5;
+    font-weight: bold;
+  }
+  @media (max-width: 768px) {
+    /* hamburger meydana çıktığında (tıklanınca açılan merdiven, Menu deki ölçüyle aynı olmalı) */
+    background-color: #e1f1dd;
+    border: 1px solid #00adb5;
+    border-radius: 10px;
+    width: 100%;
   }
 `;
 export const MenuLink = styled(Link)`
@@ -67,6 +109,7 @@ export const Menu = styled.div`
     /* props olarak, osman=true geldi mesela */
     max-height: ${({ osman }) => (osman ? "300px" : "0")};
     /* 3 çizgiye ilk tıklandığında 300 px açılsın, sonraki tıklamada kapansın */
+    /* max-height:300px yazarsak hep açık olur */
     transition: max-height 0.3s ease-in;
   }
 `;
@@ -76,6 +119,7 @@ export const Logo = styled(Link)`
   text-decoration: none;
   font-weight: 800;
   font-size: 2rem;
+
   i {
     font-family: "Girassol", sans-serif;
   }

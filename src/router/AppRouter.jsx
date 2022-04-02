@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 import Home from "../pages/home/Home";
@@ -9,18 +9,19 @@ import Login from "../pages/login/Login";
 
 const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <Navbar />
       <Routes>
         <Route>
-          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/details" element={<Details />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Home />} />
+         
         </Route>
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </Router>
   );
 };
 

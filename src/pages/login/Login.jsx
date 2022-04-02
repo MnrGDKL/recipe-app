@@ -22,7 +22,7 @@ const Login = () => {
       <FormContainer>
         <StyledImg src={mealSvg} />
         <Header>{"<Clarusway/>"}Recipe</Header>
-
+        {/* login sayfasındaki yuvarlak olayın içindeki yazı (Header) */}
         <StyledForm onSubmit={handleSubmit}>
           <StyledInput type="text" placeholder="username" required />
           <StyledInput type="password" placeholder="password" required />

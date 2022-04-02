@@ -25,7 +25,7 @@ const About = () => {
           Java, Hibernate, SpringBoot, AWS Services.
         </h4>
         <h2>
-          <a href="mailto:helen@clarusway.com">Send email</a> :
+          <a href="mailto:Ashley@clarusway.com">Send email</a> :
           Ashley@clarusway.com
         </h2>
       </InfoContainer>

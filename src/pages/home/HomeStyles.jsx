@@ -60,6 +60,7 @@ export const ImgDiv = styled.div`
   display: flex;
   justify-content: center;
   margin: 50px;
+  background-color: #00adb5;
 `;
 
 export const HomeImg = styled.img`

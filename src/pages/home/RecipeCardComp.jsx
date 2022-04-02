@@ -7,7 +7,7 @@ const RecipeCardComp = ({ recipe }) => {
   const moreClick = () => {
     navigate("/details", { state: { recipe } });
     // useNavigate()= bir olay işleyicide veya durumdaki bazı değişikliklere yanıt olarak programlı olarak gezinmenize izin verir
-    // view more tıklandığında o yiyeceğin adıyla detaylarının old sayfaya yönlen
+    // view more tıklandığında o yiyeceğin adıyla detaylarının old sayfaya yönlen. buraya veriler emanet geldi home dan, buradan giderken state e gömerek navigate ile yolluyoruz
   };
   // console.log(recipe);
   // console.log(recipe.recipe);
