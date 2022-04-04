@@ -21,7 +21,9 @@ const Footer = () => {
         alt="design"
         style={{ width: "40px", margin: "0  25px 0 10px" }}
       />
-      <span>design</span>
+      <span
+        >Copyright {new Date().getFullYear()}
+      </span>
     </div>
   );
 };
