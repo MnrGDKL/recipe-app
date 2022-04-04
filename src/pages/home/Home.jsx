@@ -33,7 +33,9 @@ const Home = () => {
   const getData = async () => {
     if (query) {
       const result = await axios.get(url);
+      console.log(result);
       console.log(result.data);
+      console.log(result.data.hits);
       
       
       //bunu yazdır önce
@@ -59,6 +61,7 @@ const Home = () => {
   return (
     <div>
       {/* alttakileri header a oradan da form a gönderiyorum, orada setMeal ve setQuery çalışacak setter a gönderiyorum yani */}
+      {/* componente gidecekse tek kelime, style a gidecekse aç kapa 2 kelime */}
       <Header
         setQuery={setQuery}
           // query={query}
@@ -74,7 +77,7 @@ const Home = () => {
           {/* arama sonucu yiyecek kartlarının kutusu */}
           {recipes.map((liste, index) => (
             <RecipeCardComp key={index} recipe={liste.recipe} />
-            // sadece liste yollarsak apı deki gibi  gidiyor. liste.recipe= json formatında key value. kısaca{recipe}
+            // sadece liste yollarsak apı deki gibi  gidiyor. liste.recipe= json formatında key value. kısaca{recipe}.hits in içinde recipe var, liste hits e kadar gelir ben içindeki recipe'yi istiyorum
             // veriler direk bu sayfaya geliyor ,RecipeCardComp deki gibi navigate state e gerek yok
           ))}
         </MainContainer>

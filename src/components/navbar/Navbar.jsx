@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Nav>
-      <Logo  to="/">
+      <Logo to="/">
         <i>{"<Clarusway>"}</i>
         <span>recipe</span>
       </Logo>
@@ -15,6 +15,10 @@ const Navbar = () => {
         <span />
         <span />
         <span />
+        {/* XHTML= HTML ile hazırlanmış sayfaların tüm cihazlarda düzgün çalışması için geliştirilmiştir. Bu yüzden <span></span> şeklinde yazım (HTML), dinamik stillerin düzgün bir şekilde oluşturulmamasına,
+        yeniden düzenleme işlemi sırasında hatalara, eksik bir tema desteğine
+        neden olabilir ve uygulamanızı iyi bir sebep olmadan daha büyük hale
+        getirebilir. */}
         {/* boş spanlar verilen stillerle çizgi yapıyor */}
       </Hamburger>
 

@@ -12,15 +12,17 @@ const Form = ({  setQuery, getData, mealTypes, setMeal }) => {
   };
 
   return (
+    /* 3 arama kutusunun toplandığı kutu */
     <FormContainer onSubmit={handleSubmit}>
       <FoodInput
         type="text"
         placeholder="Search"
         onChange={(e) => setQuery(e.target.value)}
       />
+      {/* arama yapılacak ürünün yazıldığı input */}
       <Button
         type="submit"
-      
+
         // onClick={getData} yazarsak 2 kere veri getirir. zaten bu buton submit işlemi yapacak ve form un onsubmit ini tetikleyecek
       >
         Search

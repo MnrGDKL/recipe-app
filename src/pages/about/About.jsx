@@ -4,7 +4,7 @@ import {
   HeaderContainer,
   InfoContainer,
   StyledImage,
-} from "./AboutStyle";
+} from "./AboutStyles";
 import codingSvg from "../../assets/coding.svg";
 
 const About = () => {

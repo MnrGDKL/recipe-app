@@ -75,6 +75,7 @@ export const ExtrnlLink = styled(ExternalLink)`
 export const MenuLink = styled(Link)`
   /* navbardaki 3 kelime ... tek tek about vs yazanların özellikleri */
   padding: 1rem 2rem;
+  
   cursor: pointer;
   text-align: center;
   text-decoration: none;

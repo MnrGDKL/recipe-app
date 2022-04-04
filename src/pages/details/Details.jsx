@@ -6,7 +6,7 @@ import {
   HeaderContainer,
   IngContainer,
   OtherPart,
-} from "./DetailsStyle";
+} from "./DetailsStyles";
 import { useLocation } from "react-router-dom";
 import dietSvg from "../../assets/diet.svg";
 
@@ -61,6 +61,7 @@ const Details = () => {
             <div key={index}>
               <p>
                 {index + 1} - {line}
+                {/* ingredientLines içinde bir sürü obje var tek tek yazdır, başına no ekle */}
               </p>
               <br />
             </div>
