@@ -24,6 +24,7 @@ export const Hamburger = styled.div`
     height: 4px;
     width: 25px;
     background: #00adb5;
+    /* margin-left: 250px; */
     margin-bottom: 4px;
     border-radius: 5px;
   }
@@ -87,6 +88,7 @@ export const MenuLink = styled(Link)`
   cursor: pointer;
   text-align: center;
   text-decoration: none;
+  /* kelimelerin altı çizili olmasın */
   color: #02475e;
   transition: all 0.3s ease-in;
   font-size: 2rem;
@@ -105,7 +107,7 @@ export const MenuLink = styled(Link)`
 `;
 export const Menu = styled.div`
   /* navbardaki 3 kelime about ...hepsini içine alan sarmalın (kutunun ) özellikleri*/
-  display: flex;
+   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;

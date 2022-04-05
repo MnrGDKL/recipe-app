@@ -5,5 +5,5 @@
 
 //   return user ? <Outlet /> : <Navigate to="/login" />;
 // };
-
+//  <Outlet />; = Route nin içindeki döndürülecek component, child 
 // export default PrivateRouter;

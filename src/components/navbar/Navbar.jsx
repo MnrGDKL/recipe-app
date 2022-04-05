@@ -1,18 +1,10 @@
 import React, { useState } from "react";
-import {
-  Nav,
-  Logo,
-  Hamburger,
-  MenuLink,
-  Menu,
-  
-  A,
-} from "./NavbarStyles";
+import { Nav, Logo, Hamburger, MenuLink, Menu } from "./NavbarStyles";
 //  import { ExternalLink } from "react-external-link";
-// import { Link } from "react-router-dom";
+// import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-   const [first, setfirst] = useState("");
+  const [first, setfirst] = useState("");
   return (
     <Nav>
       <Logo to="/">
@@ -21,6 +13,7 @@ const Navbar = () => {
       </Logo>
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
         {/* hamburger o anda ne durumdaysa, tıklandığında tersi olacak, false ise true.. */}
+        {/* <GiHamburgerMenu /> */}
         <span />
         <span />
         <span />
@@ -55,9 +48,9 @@ const Navbar = () => {
         {/* <ExtrnlLink href="https://github.com/orgs/clarusway/dashboard">
           Github
         </ExtrnlLink> */}
-        <A href="https://github.com" target="_blank">
+        {/* <A href="https://github.com" target="_blank">
           Github
-        </A>
+        </A> */}
         <MenuLink onClick={() => setIsOpen(!isOpen)} to="/login">
           Logout
         </MenuLink>

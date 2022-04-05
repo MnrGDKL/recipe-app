@@ -17,11 +17,7 @@ const AppRouter = () => {
           <Route path="/details" element={<Details />} />
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<Home />} />
-          {/* <Route path="/k" exact>
-            {window.location.href(
-              "https://github.com/orgs/clarusway/dashboard"
-            )}
-          </Route> */}
+         
         </Route>
       </Routes>
       <Footer />

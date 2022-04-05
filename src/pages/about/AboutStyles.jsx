@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -16,6 +17,7 @@ export const AboutContainer = styled.div`
 `;
 
 export const InfoContainer = styled.div`
+ 
   text-align: right;
   margin: 0 10px;
   max-width: 1000px;

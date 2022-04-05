@@ -10,6 +10,7 @@ import codingSvg from "../../assets/coding.svg";
 const About = () => {
   return (
     <AboutContainer>
+      {/* sayfanın tamamı */}
       <StyledImage src={codingSvg} />
       <HeaderContainer>
         <h1>
@@ -20,7 +21,7 @@ const About = () => {
         <h2>Hi, I'am Ashley</h2>
         <h3>I’m currently learning Full-Stack Development Languages.</h3>
         <h4>
-          {" "}
+          
           I've already known JS, ReactJS, ReactNative, NodeJS, MongoDB,SQL,
           Java, Hibernate, SpringBoot, AWS Services.
         </h4>
