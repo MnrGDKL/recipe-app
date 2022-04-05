@@ -1,9 +1,18 @@
 import React, { useState } from "react";
-import { Nav, Logo, Hamburger, MenuLink, Menu,ExtrnlLink,A } from "./NavbarStyles";
+import {
+  Nav,
+  Logo,
+  Hamburger,
+  MenuLink,
+  Menu,
+  
+  A,
+} from "./NavbarStyles";
 //  import { ExternalLink } from "react-external-link";
 // import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+   const [first, setfirst] = useState("");
   return (
     <Nav>
       <Logo to="/">
@@ -27,17 +36,28 @@ const Navbar = () => {
         <MenuLink onClick={() => setIsOpen(!isOpen)} to="/about">
           About
         </MenuLink>
-
         <MenuLink
-          to={{ pathname: "https://github.com/orgs/clarusway/dashboard" }}
+          onClick={() =>
+            setfirst(
+              (window.location.href =
+                "https://github.com/orgs/clarusway/dashboard")
+            )
+          }
+          to={first}
+          target="_blank"
         >
-          Github
+          Githubb
         </MenuLink>
 
-        <ExtrnlLink href="https://github.com/orgs/clarusway/dashboard">
-          gg
-        </ExtrnlLink>
-        <A href="https://github.com">Link</A>
+        {/* React-router, Tek Sayfalık Uygulama için bir yönlendirme sistemidir. Tüm
+        rotaların sayfanızda tanımlanması ve uygulamanızın içinde kapsüllenmesi
+        gerekir */}
+        {/* <ExtrnlLink href="https://github.com/orgs/clarusway/dashboard">
+          Github
+        </ExtrnlLink> */}
+        <A href="https://github.com" target="_blank">
+          Github
+        </A>
         <MenuLink onClick={() => setIsOpen(!isOpen)} to="/login">
           Logout
         </MenuLink>

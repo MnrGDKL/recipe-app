@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const LoginContainer = styled.div`
+  /* resmin olduğu div */
   background-image: url("https://picsum.photos/1600/900");
   background-repeat: no-repeat;
   height: 100vh;
@@ -12,6 +13,7 @@ export const LoginContainer = styled.div`
 `;
 
 export const FormContainer = styled.div`
+  /* yuvarlak yer */
   width: 600px;
   min-width: 600px;
   height: 600px;
@@ -26,12 +28,14 @@ export const FormContainer = styled.div`
 `;
 
 export const Header = styled.h1`
+  /* clarusway başlığı yazan yer */
   color: white;
   font-family: "Girassol", sans-serif;
   font-size: 3rem;
 `;
 
 export const StyledInput = styled.input`
+  /* username giriş inputları */
   height: 50px;
   font-size: 2rem;
   width: 250px;
@@ -45,6 +49,7 @@ export const StyledInput = styled.input`
 `;
 
 export const StyledForm = styled.form`
+  /* 3 kutunun olduğu form */
   display: flex;
   flex-direction: column;
 `;
@@ -60,6 +65,8 @@ export const StyledButton = styled.button`
 `;
 
 export const StyledImg = styled.img`
+  /* yuvarlağın içindeki üstteki küçük resim */
+
   width: 150px;
   margin: 1rem;
 `;

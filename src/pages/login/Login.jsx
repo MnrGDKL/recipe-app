@@ -23,7 +23,9 @@ const Login = () => {
         <StyledImg src={mealSvg} />
         <Header>{"<Clarusway/>"}Recipe</Header>
         {/* login sayfasındaki yuvarlak olayın içindeki yazı (Header) */}
+
         <StyledForm onSubmit={handleSubmit}>
+          {/* 3 kutunun olduğu form  */}
           <StyledInput type="text" placeholder="username" required />
           <StyledInput type="password" placeholder="password" required />
           <StyledButton type="submit">Login</StyledButton>

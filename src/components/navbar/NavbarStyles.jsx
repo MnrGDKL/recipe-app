@@ -50,6 +50,10 @@ export const A = styled.a`
     border: 1px solid #00adb5;
     border-radius: 10px;
     width: 100%;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
 export const ExtrnlLink = styled(ExternalLink)`
@@ -70,12 +74,16 @@ export const ExtrnlLink = styled(ExternalLink)`
     border: 1px solid #00adb5;
     border-radius: 10px;
     width: 100%;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
 export const MenuLink = styled(Link)`
   /* navbardaki 3 kelime ... tek tek about vs yazanların özellikleri */
   padding: 1rem 2rem;
-  
+
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -92,7 +100,7 @@ export const MenuLink = styled(Link)`
     background-color: #e1f1dd;
     border: 1px solid #00adb5;
     border-radius: 10px;
-    width: 100%;
+    width: 91%;
   }
 `;
 export const Menu = styled.div`
@@ -107,6 +115,7 @@ export const Menu = styled.div`
     /* uzun yazı olurda taşarsa gizle */
     flex-direction: column;
     width: 100%;
+    /* gap:2px; */
     /* props olarak, osman=true geldi mesela */
     max-height: ${({ osman }) => (osman ? "300px" : "0")};
     /* 3 çizgiye ilk tıklandığında 300 px açılsın, sonraki tıklamada kapansın */
