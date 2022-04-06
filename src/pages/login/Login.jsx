@@ -11,11 +11,18 @@ import {
 import mealSvg from "../../assets/meal.svg";
 
 const Login = () => {
+const user = {
+  username: "user",
+};
+
+
   const handleSubmit = (event) => {
     event.preventDefault();
+    sessionStorage.setItem("user", JSON.stringify(user));
+    // sessionStorage e verileri gönder
     window.location.href = "/";
     // geçerli sayfanın href'ini (URL) döndürür. anasayfaya git
-  };
+  };;
 
   return (
     <LoginContainer>

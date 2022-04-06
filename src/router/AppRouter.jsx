@@ -17,12 +17,10 @@ const AppRouter = () => {
           <Route path="/details" element={<Details />} />
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<Home />} />
-         
         </Route>
       </Routes>
       <Footer />
     </Router>
   );
 };
-
 export default AppRouter;
