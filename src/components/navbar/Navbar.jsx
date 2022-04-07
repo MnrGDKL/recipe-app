@@ -29,7 +29,7 @@ const Navbar = () => {
         <MenuLink onClick={() => setIsOpen(!isOpen)} to="/about">
           About
         </MenuLink>
-        <h1>namert</h1>
+        <h2>nnn</h2>
         {/* hamburger tıklanınca open açılıyor, about a basınca false kapanmalı */}
         <MenuLink
           onClick={() =>
