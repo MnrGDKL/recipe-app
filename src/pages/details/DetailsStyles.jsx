@@ -26,7 +26,7 @@ export const DetailPart = styled.div`
   /* height: calc(100vh - 300px); */
   @media (max-width: 1250px) {
     justify-content: center;
-    background-color: red;
+   
     border: 1px solid red;
   }
 `;

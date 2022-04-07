@@ -4,7 +4,7 @@ import { Nav, Logo, Hamburger, MenuLink, Menu } from "./NavbarStyles";
 // import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [first, setfirst] = useState("");
+  const [github, setGithub] = useState("");
   return (
     <Nav>
       <Logo to="/home">
@@ -29,16 +29,15 @@ const Navbar = () => {
         <MenuLink onClick={() => setIsOpen(!isOpen)} to="/about">
           About
         </MenuLink>
-       
         {/* hamburger tıklanınca open açılıyor, about a basınca false kapanmalı */}
         <MenuLink
           onClick={() =>
-            setfirst(
+            setGithub(
               (window.location.href =
                 "https://github.com/orgs/clarusway/dashboard")
             )
           }
-          to={first}
+          to={github}
           target="_blank"
         >
           Githubb
@@ -60,6 +59,7 @@ const Navbar = () => {
         >
           Logout
         </MenuLink>
+        {/* sessionStorage.clear()=> bunu yazmazsak sessionStorage temizlenmiyor, logout yapınca direk girilebiliyor */}
       </Menu>
     </Nav>
   );

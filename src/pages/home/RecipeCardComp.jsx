@@ -7,11 +7,11 @@ const RecipeCardComp = ({ recipe }) => {
   let navigate = useNavigate();
   const moreClick = () => {
     navigate("/details", { state: { recipe } });
-    // useNavigate()= bir olay işleyicide veya durumdaki bazı değişikliklere yanıt olarak programlı olarak gezinmenize izin verir. direk usenavigate i buraya yazarsak extra import yazılmalı, o yüzden dışta tanımlıyoruz
-    // view more tıklandığında o yiyeceğin adıyla detaylarının old sayfaya yönlen. buraya veriler emanet geldi home dan, buradan giderken state e gömerek navigate ile yolluyoruz
+    // useNavigate()= bir olay işleyicide veya durumdaki bazı değişikliklere yanıt olarak programlı olarak gezinmenize izin verir. direk usenavigate i buraya yazarsak extra import yazılmalı, o yüzden function dışında tanımlıyoruz
+    // view more tıklandığında o yiyeceğin adıyla detaylarının old sayfaya yönlen. buraya veriler emanet geldi home dan, buradan giderken state e gömerek navigate ile yolluyoruz. recipe=bütün data(label, image, details...)
   };
   // console.log(recipe.ingredientLines);
-  //  console.log(recipe);
+    console.log(recipe);
   //  console.log(recipe.recipe);
   return (
     <RecipeCard>

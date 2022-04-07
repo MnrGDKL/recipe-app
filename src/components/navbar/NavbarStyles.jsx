@@ -33,54 +33,7 @@ export const Hamburger = styled.div`
     /* kapsayıcı içerisindeki öğelere artık esneklik vermek için, artık gözükmesi için*/
   }
 `;
-// export const A = styled.a`
-//   cursor: pointer;
-//   text-align: center;
-//   text-decoration: none;
-//   color: #02475e;
-//   transition: all 0.3s ease-in;
-//   font-size: 2rem;
-//   font-family: "Girassol", sans-serif;
-//   &:hover {
-//     color: #00adb5;
-//     font-weight: bold;
-//   }
-//   @media (max-width: 768px) {
-//     /* hamburger meydana çıktığında (tıklanınca açılan merdiven, Menu deki ölçüyle aynı olmalı) */
-//     background-color: #e1f1dd;
-//     border: 1px solid #00adb5;
-//     border-radius: 10px;
-//     width: 100%;
-//     height: 67px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//   }
-// `;
-// export const ExtrnlLink = styled(ExternalLink)`
-//   cursor: pointer;
-//   text-align: center;
-//   text-decoration: none;
-//   color: #02475e;
-//   transition: all 0.3s ease-in;
-//   font-size: 2rem;
-//   font-family: "Girassol", sans-serif;
-//   &:hover {
-//     color: #00adb5;
-//     font-weight: bold;
-//   }
-//   @media (max-width: 768px) {
-//     /* hamburger meydana çıktığında (tıklanınca açılan merdiven, Menu deki ölçüyle aynı olmalı) */
-//     background-color: #e1f1dd;
-//     border: 1px solid #00adb5;
-//     border-radius: 10px;
-//     width: 100%;
-//     height: 67px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//   }
-// `;
+
 export const MenuLink = styled(Link)`
   /* navbardaki 3 kelime ... tek tek about vs yazanların özellikleri */
 
@@ -145,3 +98,51 @@ export const Logo = styled(Link)`
     color: #00adb5;
   }
 `;
+// export const A = styled.a`
+//   cursor: pointer;
+//   text-align: center;
+//   text-decoration: none;
+//   color: #02475e;
+//   transition: all 0.3s ease-in;
+//   font-size: 2rem;
+//   font-family: "Girassol", sans-serif;
+//   &:hover {
+//     color: #00adb5;
+//     font-weight: bold;
+//   }
+//   @media (max-width: 768px) {
+//     /* hamburger meydana çıktığında (tıklanınca açılan merdiven, Menu deki ölçüyle aynı olmalı) */
+//     background-color: #e1f1dd;
+//     border: 1px solid #00adb5;
+//     border-radius: 10px;
+//     width: 100%;
+//     height: 67px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+// `;
+// export const ExtrnlLink = styled(ExternalLink)`
+//   cursor: pointer;
+//   text-align: center;
+//   text-decoration: none;
+//   color: #02475e;
+//   transition: all 0.3s ease-in;
+//   font-size: 2rem;
+//   font-family: "Girassol", sans-serif;
+//   &:hover {
+//     color: #00adb5;
+//     font-weight: bold;
+//   }
+//   @media (max-width: 768px) {
+//     /* hamburger meydana çıktığında (tıklanınca açılan merdiven, Menu deki ölçüyle aynı olmalı) */
+//     background-color: #e1f1dd;
+//     border: 1px solid #00adb5;
+//     border-radius: 10px;
+//     width: 100%;
+//     height: 67px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+// `;

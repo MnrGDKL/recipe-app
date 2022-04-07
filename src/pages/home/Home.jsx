@@ -78,7 +78,8 @@ const Home = () => {
             <RecipeCardComp key={index} recipe={liste.recipe} />
             // sadece liste yollarsak apı deki gibi  gidiyor. liste.recipe= json formatında key value. kısaca{recipe}.hits in içinde recipe var, liste hits e kadar gelir ben içindeki recipe'yi istiyorum
             // veriler direk bu sayfaya geliyor ,RecipeCardComp deki gibi navigate state e gerek yok
-          ))}
+        
+         ))}
         </MainContainer>
       ) : (
         <ImgDiv>

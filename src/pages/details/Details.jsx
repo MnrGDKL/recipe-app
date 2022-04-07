@@ -12,9 +12,10 @@ import dietSvg from "../../assets/diet.svg";
 
 const Details = () => {
   const location = useLocation();
-
+// geçerli URL'yi temsil eden konum nesnesini döndürür
   const recipe = location.state.recipe;
   // navigate("/details", { state: { recipe } }); recipecard da bütün data json formatında state e gömülmüştü
+  console.log(location.state.recipe);
   return (
     <DetailContainer>
       <HeaderContainer>
@@ -26,7 +27,7 @@ const Details = () => {
         <OtherPart>
           <>Nutrients</>
           <p>
-            {recipe.totalNutrients.CA.label} :{" "}
+            {recipe.totalNutrients.CA.label} :
             {Math.round(recipe.totalNutrients.CA.quantity)}
             {recipe.totalNutrients.CA.unit}
           </p>
@@ -56,12 +57,14 @@ const Details = () => {
         <ImgContainer>
           <img src={recipe.image} alt={recipe.label} />
         </ImgContainer>
+
+        {/* içindekiler  */}
         <IngContainer>
           {recipe.ingredientLines.map((line, index) => (
             <div key={index}>
               <p>
                 {index + 1} - {line}
-                {/* ingredientLines içinde bir sürü obje var tek tek yazdır, başına no ekle */}
+                {/* ingredientLines içinde bir sürü obje var tek tek yazdır, başına no ekle 1-{line} gibi */}
               </p>
               <br />
             </div>
