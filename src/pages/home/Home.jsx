@@ -70,6 +70,7 @@ const Home = () => {
         // meal={meal}
         //meal = breakfast mesela. mealTypes= bütün hepsi, breakfast, lunch....
       />
+      <h1>jnk</h1>
       {recipes ? (
         // api den gelen datanın tümü, (bir yiyecek ismi girildiğinde)
         <MainContainer>
