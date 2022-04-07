@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { ExternalLink } from "react-external-link";
+// import { ExternalLink } from "react-external-link";
 export const Nav = styled.div`
   /* açık yeşil olan navbar */
   padding: 0 2rem;
@@ -33,64 +33,65 @@ export const Hamburger = styled.div`
     /* kapsayıcı içerisindeki öğelere artık esneklik vermek için, artık gözükmesi için*/
   }
 `;
-export const A = styled.a`
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  color: #02475e;
-  transition: all 0.3s ease-in;
-  font-size: 2rem;
-  font-family: "Girassol", sans-serif;
-  &:hover {
-    color: #00adb5;
-    font-weight: bold;
-  }
-  @media (max-width: 768px) {
-    /* hamburger meydana çıktığında (tıklanınca açılan merdiven, Menu deki ölçüyle aynı olmalı) */
-    background-color: #e1f1dd;
-    border: 1px solid #00adb5;
-    border-radius: 10px;
-    width: 100%;
-    height: 67px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-`;
-export const ExtrnlLink = styled(ExternalLink)`
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  color: #02475e;
-  transition: all 0.3s ease-in;
-  font-size: 2rem;
-  font-family: "Girassol", sans-serif;
-  &:hover {
-    color: #00adb5;
-    font-weight: bold;
-  }
-  @media (max-width: 768px) {
-    /* hamburger meydana çıktığında (tıklanınca açılan merdiven, Menu deki ölçüyle aynı olmalı) */
-    background-color: #e1f1dd;
-    border: 1px solid #00adb5;
-    border-radius: 10px;
-    width: 100%;
-    height: 67px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-`;
+// export const A = styled.a`
+//   cursor: pointer;
+//   text-align: center;
+//   text-decoration: none;
+//   color: #02475e;
+//   transition: all 0.3s ease-in;
+//   font-size: 2rem;
+//   font-family: "Girassol", sans-serif;
+//   &:hover {
+//     color: #00adb5;
+//     font-weight: bold;
+//   }
+//   @media (max-width: 768px) {
+//     /* hamburger meydana çıktığında (tıklanınca açılan merdiven, Menu deki ölçüyle aynı olmalı) */
+//     background-color: #e1f1dd;
+//     border: 1px solid #00adb5;
+//     border-radius: 10px;
+//     width: 100%;
+//     height: 67px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+// `;
+// export const ExtrnlLink = styled(ExternalLink)`
+//   cursor: pointer;
+//   text-align: center;
+//   text-decoration: none;
+//   color: #02475e;
+//   transition: all 0.3s ease-in;
+//   font-size: 2rem;
+//   font-family: "Girassol", sans-serif;
+//   &:hover {
+//     color: #00adb5;
+//     font-weight: bold;
+//   }
+//   @media (max-width: 768px) {
+//     /* hamburger meydana çıktığında (tıklanınca açılan merdiven, Menu deki ölçüyle aynı olmalı) */
+//     background-color: #e1f1dd;
+//     border: 1px solid #00adb5;
+//     border-radius: 10px;
+//     width: 100%;
+//     height: 67px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+// `;
 export const MenuLink = styled(Link)`
   /* navbardaki 3 kelime ... tek tek about vs yazanların özellikleri */
-  padding: 1rem 2rem;
 
+  padding: 1rem 2rem;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   /* kelimelerin altı çizili olmasın */
   color: #02475e;
-  transition: all 0.3s ease-in;
+  
+  /* transition: all 0.3s ease-in; */
   font-size: 2rem;
   font-family: "Girassol", sans-serif;
   &:hover {
@@ -99,7 +100,7 @@ export const MenuLink = styled(Link)`
   }
   @media (max-width: 768px) {
     /* hamburger meydana çıktığında (tıklanınca açılan merdiven, Menu deki ölçüyle aynı olmalı) */
-    background-color: #e1f1dd;
+    /* background-color: #e1f1dd; */
     border: 1px solid #00adb5;
     border-radius: 10px;
     width: 91%;
@@ -107,10 +108,12 @@ export const MenuLink = styled(Link)`
 `;
 export const Menu = styled.div`
   /* navbardaki 3 kelime about ...hepsini içine alan sarmalın (kutunun ) özellikleri*/
-   display: flex;
+background: #e1f1dd;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  /* diğer stillere göre ayarla kendini, bunu yazmazsak food app in altında kalacak */
   /* 3 kelime  açılınca üstteki özelliklerde olsun*/
   @media (max-width: 768px) {
     overflow: hidden;
@@ -122,7 +125,7 @@ export const Menu = styled.div`
     max-height: ${({ osman }) => (osman ? "300px" : "0")};
     /* 3 çizgiye ilk tıklandığında 300 px açılsın, sonraki tıklamada kapansın */
     /* max-height:300px yazarsak hep açık olur */
-    transition: max-height 0.3s ease-in;
+    /* transition: max-height 0.3s ease-in; */
   }
 `;
 export const Logo = styled(Link)`

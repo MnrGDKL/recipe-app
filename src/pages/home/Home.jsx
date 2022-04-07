@@ -7,10 +7,9 @@ import RecipeCardComp from "./RecipeCardComp";
 
 
 
-const APP_ID = "4e9f05eb"; //bfbb3efc;
-const APP_KEY = "9b904d703fa0d46a88ce1ac63f29f498";
-
-// 43faeee790f26cd82b28050d3031619d	—
+const APP_ID = "bfbb3efc"; //bfbb3efc;
+const APP_KEY = "43faeee790f26cd82b28050d3031619d";
+// 43faeee790f26cd82b28050d3031619d
 
 const Home = () => {
   const [query, setQuery] = useState("");

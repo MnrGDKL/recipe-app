@@ -33,6 +33,7 @@ const Form = ({  setQuery, getData, mealTypes, setMeal }) => {
         id="mealTypes"
         onChange={(e) => setMeal(e.target.value)}
       >
+        {/* onChange ile setMeal e attım option la browser da göstereceğiz */}
         {mealTypes?.map((item, index) => (
           <option key={index} value={item.toLowerCase()}>
             {item}

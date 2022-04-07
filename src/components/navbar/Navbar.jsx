@@ -7,12 +7,12 @@ const Navbar = () => {
   const [first, setfirst] = useState("");
   return (
     <Nav>
-      <Logo to="/">
+      <Logo to="/home">
         <i>{"<Clarusway>"}</i>
         <span>recipe</span>
       </Logo>
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
-        {/* hamburger o anda ne durumdaysa, tıklandığında tersi olacak, false ise true.. */}
+        {/* hamburger o anda ne durumdaysa, tıklandığında tersi olacak, false ise true..ve sonra Menu bunu style a props la gönder */}
         {/* <GiHamburgerMenu /> */}
         <span />
         <span />
@@ -29,6 +29,7 @@ const Navbar = () => {
         <MenuLink onClick={() => setIsOpen(!isOpen)} to="/about">
           About
         </MenuLink>
+        {/* hamburger tıklanınca open açılıyor, about a basınca false kapanmalı */}
         <MenuLink
           onClick={() =>
             setfirst(
@@ -51,7 +52,12 @@ const Navbar = () => {
         {/* <A href="https://github.com" target="_blank">
           Github
         </A> */}
-        <MenuLink onClick={() => setIsOpen(!isOpen)} to="/login">
+        <MenuLink
+          onClick={() => setIsOpen(!isOpen)}
+          // onMouseUp= fare düğmesini bırakırken
+          onMouseUp={() => sessionStorage.clear()}
+          to="/"
+        >
           Logout
         </MenuLink>
       </Menu>

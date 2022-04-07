@@ -9,20 +9,17 @@ import {
   StyledInput,
 } from "./LoginStyles";
 import mealSvg from "../../assets/meal.svg";
-
+// import { useNavigate } from "react-router-dom";
 const Login = () => {
+// const navigate = useNavigate();
 const user = {
   username: "user",
 };
-
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    sessionStorage.setItem("user", JSON.stringify(user));
-    // sessionStorage e verileri gönder
-    window.location.href = "/";
-    // geçerli sayfanın href'ini (URL) döndürür. anasayfaya git
-  };;
+const handleSubmit = (event) => {
+  event.preventDefault();
+  sessionStorage.setItem("user", JSON.stringify(user));
+      window.location.href = "/home";
+};
 
   return (
     <LoginContainer>

@@ -21,8 +21,9 @@ export const FormContainer = styled.form`
   /* 3 arama kutusunun toplandığı kutu */
 
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   flex-wrap: wrap;
+  /* ekran küçülünce sıkışmasınlar,alta geçsinler */
   justify-content: center;
   border: 2px solid white;
   border-radius: 3px;
@@ -35,8 +36,9 @@ export const FoodInput = styled.input`
   width: 15rem;
   border: none;
   border-radius: 3px;
-  outline: none;
+  /* outline: none; */
   text-indent: 10px;
+  /* yazı 10px içten başlasın */
   margin: 5px;
   font-size: 2rem;
 `;
@@ -45,7 +47,7 @@ export const Button = styled.button`
   /* search butonu */
   background-color: #e1f1dd;
   padding: 5px;
-  outline: none;
+  /* outline: none; */
   height: 3rem;
   border: none;
   margin: 5px;

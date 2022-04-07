@@ -27,6 +27,7 @@ export const RecipeCard = styled.div`
   &:hover {
     box-shadow: none;
     transition: all 0.3s ease-in;
+    /* box-shadow: none özelliğinin yavaşça uygulanmasını sağlar; */
   }
 `;
 
