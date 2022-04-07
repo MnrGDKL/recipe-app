@@ -29,7 +29,7 @@ const Navbar = () => {
         <MenuLink onClick={() => setIsOpen(!isOpen)} to="/about">
           About
         </MenuLink>
-        <h2>nnn</h2>
+        <h3>nnn</h3>>
         {/* hamburger tıklanınca open açılıyor, about a basınca false kapanmalı */}
         <MenuLink
           onClick={() =>
@@ -43,7 +43,6 @@ const Navbar = () => {
         >
           Githubb
         </MenuLink>
-
         {/* React-router, Tek Sayfalık Uygulama için bir yönlendirme sistemidir. Tüm
         rotaların sayfanızda tanımlanması ve uygulamanızın içinde kapsüllenmesi
         gerekir */}
