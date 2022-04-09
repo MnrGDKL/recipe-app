@@ -4,8 +4,8 @@ import React, {useState} from 'react'
 import Header from "../../components/header/Header";
 
 
-const APP_ID = "id";
-const APP_KEY="KEY";
+const APP_ID = "bfbb3efc"; 
+const APP_KEY = "43faeee790f26cd82b28050d3031619d";
 /* buraya kendi id ve key imizi yaziyoruz*/
 
 
@@ -21,8 +21,7 @@ const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=$
     if(query){ 
       const result = await axios.get(url);
     setFood(result.data.hits)
-  
-  
+   console.log(result);
   
   }else {
     console.log("please fill the form");
@@ -40,6 +39,8 @@ mealTypes={mealTypes}
 setMeal={setMeal}
 
 />
+
+
 
 
 

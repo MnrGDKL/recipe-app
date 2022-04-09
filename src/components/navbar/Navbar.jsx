@@ -30,26 +30,25 @@ const Navbar = () => {
           About
         </MenuLink>
         {/* hamburger tıklanınca open açılıyor, about a basınca false kapanmalı */}
-        <MenuLink
-          to="/github"
-        >
-          Githubb
-        </MenuLink>
+        <MenuLink to="/github">Githubb</MenuLink>
         {/* React-router, Tek Sayfalık Uygulama için bir yönlendirme sistemidir. Tüm
         rotaların sayfanızda tanımlanması ve uygulamanızın içinde kapsüllenmesi
         gerekir */}
-        
+        {/* <ExtrnlLink href="https://github.com/orgs/clarusway/dashboard">
+          Github
+        </ExtrnlLink> */}
+
         {/* <A href="https://github.com" target="_blank">
           Github
         </A> */}
         <MenuLink
           onClick={() => setIsOpen(!isOpen)}
-         
+          
+        
           to="/"
         >
           Logout
         </MenuLink>
-    
       </Menu>
     </Nav>
   );
