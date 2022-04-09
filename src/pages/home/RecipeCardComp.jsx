@@ -1,8 +1,15 @@
 
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Button, RecipeCard, RecipeHeader, RecipeImage } from './HomeStyles'
 
 const RecipeCardComp = ({recipe1}) => {
+const navigate=useNavigate();
+
+const moreClick=()=> {
+ navigate("/details" , {state:{recipe1}})
+}
+
   return (
    <RecipeCard>
 <RecipeHeader>
@@ -10,7 +17,7 @@ const RecipeCardComp = ({recipe1}) => {
 </RecipeHeader>
 <RecipeImage src={recipe1.image} />
 
-<Button> View More</Button>
+<Button onClick={moreClick}> View More</Button>
 
    </RecipeCard>
   )
