@@ -4,9 +4,9 @@ import React, {useState} from 'react'
 import Header from "../../components/header/Header";
 
 
-const APP_ID = "bfbb3efc";
-const APP_KEY = "43faeee790f26cd82b28050d3031619d";
-
+const APP_ID = "id";
+const APP_KEY="KEY";
+/* buraya kendi id ve key imizi yaziyoruz*/
 
 
 const Home = () => {
