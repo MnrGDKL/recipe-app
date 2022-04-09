@@ -2,7 +2,8 @@
 import axios from 'axios';
 import React, {useState} from 'react'
 import Header from "../../components/header/Header";
-
+import { ImgDiv, MainContainer,HomeImg } from './HomeStyles';
+import homeSvg from '../../assets/home.svg'
 
 const APP_ID = "bfbb3efc"; 
 const APP_KEY = "43faeee790f26cd82b28050d3031619d";
@@ -21,7 +22,8 @@ const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=$
     if(query){ 
       const result = await axios.get(url);
     setFood(result.data.hits)
-   
+  //  console.log(result);
+  //  console.log(result.data.hits);
   
   }else {
     console.log("please fill the form");
@@ -40,6 +42,14 @@ setMeal={setMeal}
 
 />
 
+{food? (<MainContainer>
+fghdfghdfh
+
+</MainContainer>
+
+):<ImgDiv>
+<HomeImg src={homeSvg}/>
+</ImgDiv>}
 
 
 
